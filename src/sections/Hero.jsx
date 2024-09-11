@@ -11,7 +11,7 @@ import Eyes from "../components/Eyes.jsx";
 import Cube from "../components/Cube.jsx";
 import Rings from "../components/Rings.jsx";
 import CameraZone from "../components/Camera.jsx";
-import Button from "../components/Button.jsx";
+import Button from "../components/Buttons.jsx";
 
 const Hero = () => {
   const isSmall = useMediaQuery({ query: "(max-width: 440px)" });

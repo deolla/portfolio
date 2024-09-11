@@ -252,8 +252,13 @@ export const navLinks = [
       deskPosition: isMobile ? [0.5, -4.5, 0] : [0.25, -5.5, 0],
       cubePosition: isSmall ? [4, -5, 0] : isMobile ? [5, -5, 0] : isTablet ? [5, -5, 0] : [9, -5.5, 0],
       reactLogoPosition: isSmall ? [3, 4, 0] : isMobile ? [5, 4, 0] : isTablet ? [5, 4, 0] : [12, 3, 0],
-      ringPosition: isSmall ? [-5, 7, 0] : isMobile ? [-10, 10, 0] : isTablet ? [-12, 10, 0] : [-24, 10, 0],
+      ringPosition: isSmall ? [5, 7, 0] : isMobile ? [12, 10, 0] : isTablet ? [20, 10, 0] : [22, 10, 0],
       targetPosition: isSmall ? [-5, -10, -10] : isMobile ? [-9, -10, -10] : isTablet ? [-11, -7, -10] : [-13, -13, -10],
+      circlePosition: isSmall ? [-4, 9, -2] : isMobile ? [-8, 8, -6] : isTablet ? [-10, 9, -8] : [-15, 8, -11],
+      circleScale: isSmall ? 1.5 : isMobile ? 1.5 : 1.5,
+      circleRotation: isSmall ? [Math.PI / 2, 0, 0] : isMobile ? [Math.PI / 2, 0, 0] : isTablet ? [Math.PI / 2, 0, 0] : [Math.PI / 2, 0, 0],
+      // globePosition: isSmall ? [-10, 0, 5] : isMobile ? [8, -9, -11] : isTablet ? [6, -12, -18] : [10, -10, -11],
+      eyePosition: isSmall [-8, 9, 12]
     };
   };
   

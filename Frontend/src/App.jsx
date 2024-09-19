@@ -3,6 +3,7 @@ import Hero from "./sections/Hero.jsx";
 import About from "./sections/About.jsx";
 import Projects from "./sections/Projects.jsx";
 import Testimonial from "./sections/Testimonial.jsx";
+import Contact from "./sections/Contact.jsx";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <About />
       <Projects />
       <Testimonial />
+      <Contact />
     </main>
   );
 };

@@ -195,3 +195,18 @@ body {
     transform: rotate(0deg);
   }
 }
+
+/* Define keyframes for the fade-out effect */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  animation: fadeOut 0.4s ease-in-out forwards;
+  opacity: 0;
+}

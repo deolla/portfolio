@@ -58,11 +58,11 @@ export const navLinks = [
   
   export const myProjects = [
     {
-      title: 'Podcastr - AI Podcast Platform',
-      desc: 'Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.',
+      title: 'Bookola - Online Bookstore Platform',
+      desc: 'Bookola is a feature-packed website made for book lovers. It’s designed to help you easily find, explore, and enjoy books of all kinds. You can browse through personalized recommendations, create reading lists, track your progress, and join discussions with other readers. Whether you’re into bestsellers or classic literature, Bookola offers a simple, enjoyable way to discover and connect with books and fellow book enthusiasts',
       subdesc:
-        'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.',
-      href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
+        'Built with NodeJS, Express, MongoDB, and React, Bookola is a full-stack application that combines a user-friendly interface with powerful features to enhance your reading experience.',
+      href: 'https://bookola.onrender.com/',
       texture: '/textures/project/project1.mp4',
       logo: '/assets/project-logo1.png',
       logoStyle: {
@@ -74,32 +74,32 @@ export const navLinks = [
       tags: [
         {
           id: 1,
-          name: 'React.js',
-          path: '/assets/react.svg',
+          name: 'Python',
+          path: '/assets/python.svg',
         },
         {
           id: 2,
-          name: 'TailwindCSS',
-          path: 'assets/tailwindcss.png',
+          name: 'Flask',
+          path: 'assets/flask.svg',
         },
         {
           id: 3,
-          name: 'TypeScript',
-          path: '/assets/typescript.png',
+          name: 'HTML',
+          path: '/assets/html.svg',
         },
         {
           id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
+          name: 'CSS',
+          path: '/assets/css.svg',
         },
       ],
     },
     {
-      title: 'LiveDoc - Real-Time Google Docs Clone',
-      desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.',
+      title: 'GIGI TravelGirl - Travel and Tourism Platform',
+      desc: 'GIGI TravelGirl is a travel and tourism platform that offers a wide range of services to help you plan your next adventure. Whether you’re looking for flights, accommodations, or activities, GIGI TravelGirl has you covered. You can explore destinations, create itineraries, and book everything you need for a memorable trip, all in one place.',
       subdesc:
-        'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
-      href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
+        'With a focus on convenience and customization, GIGI TravelGirl integrates advanced search and filtering options, user reviews, and personalized recommendations to help you find the perfect travel experience.',
+      href: 'https://drive.google.com/file/d/18rGrXlcvQ2vE9ysSjNrjPK3yQp4oFXdF/view',
       texture: '/textures/project/project2.mp4',
       logo: '/assets/project-logo2.png',
       logoStyle: {
@@ -121,22 +121,22 @@ export const navLinks = [
         },
         {
           id: 3,
-          name: 'TypeScript',
-          path: '/assets/typescript.png',
+          name: 'JavaScript',
+          path: '/assets/js.svg',
         },
         {
           id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
+          name: 'Node.js',
+          path: '/assets/node.svg',
         },
       ],
     },
     {
-      title: 'CarePulse - Health Management System',
-      desc: 'An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.',
+      title: 'AIForHomework - A platform designed to help students, teacher and parents monitor their child\'s learning',
+      desc: 'AIForHomework is a smart, easy-to-use platform designed to help students with their homework, teacher with uploading tasks, and also help parents monitor their child\'s learning. It uses AI technology to provide instant answers to questions, explanations for complex concepts, and personalized study recommendations. Whether you’re struggling with math problems, writing essays, or preparing for exams, AIForHomework has you covered.',
       subdesc:
-        'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
-      href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
+        'If you’re a teacher, you can use AIForHomework to create and upload assignments, track student progress, and provide feedback. Parents can use it to monitor their child’s learning, view performance reports, and communicate with teachers. AIForHomework is a comprehensive solution that brings together students, teachers, and parents to support learning and academic success. The AIForHomework includes a chatbot that can help students with their homework, a study planner that can help students organize their study schedule, and a progress tracker that can help students track their learning progress.',
+      href: 'https://aiforhomework.com/',
       texture: '/textures/project/project3.mp4',
       logo: '/assets/project-logo3.png',
       logoStyle: {
@@ -150,33 +150,53 @@ export const navLinks = [
       tags: [
         {
           id: 1,
+          name: 'Node.js',
+          path: '/assets/node.svg',
+        },
+        {
+          id: 2,
           name: 'React.js',
           path: '/assets/react.svg',
         },
         {
-          id: 2,
+          id: 3,
           name: 'TailwindCSS',
           path: 'assets/tailwindcss.png',
         },
         {
-          id: 3,
+          id: 4,
           name: 'TypeScript',
           path: '/assets/typescript.png',
         },
         {
-          id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
+          id: 5,
+          name: 'Next.js',
+          path: '/assets/next.svg',
         },
+        {
+          id: 6,
+          name: 'JavaScript',
+          path: '/assets/js.svg',
+        },
+        {
+          id: 7,
+          name: 'HTML',
+          path: '/assets/html.svg',
+        },
+        {
+          id: 8,
+          name: 'SCSS',
+          path: '/assets/scss.svg',
+        }
       ],
     },
     {
-      title: 'Horizon - Online Banking Platform',
-      desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.',
+      title: 'DemoCredit - A mobile lending app with wallet functionality (Backend only)',
+      desc: 'DemoCredit is a mobile lending app that offers fast, convenient loans to users. With features like instant approval, flexible repayment options, and wallet functionality, DemoCredit makes borrowing money easy and hassle-free. Whether you need cash for emergencies, bills, or personal expenses, DemoCredit has you covered.',
       subdesc:
-        'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
-      href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
-      texture: '/textures/project/project4.mp4',
+        'Built with Node.js, Express, and MongoDB, DemoCredit is a backend application that provides a secure, reliable platform for managing loans, user accounts, and transactions. It can be easily integrated with frontend technologies to create a complete mobile lending solution.',
+      href: 'https://github.com/deolla/Demo-Credit',
+      texture: '',
       logo: '/assets/project-logo4.png',
       logoStyle: {
         backgroundColor: '#0E1F38',
@@ -187,32 +207,27 @@ export const navLinks = [
       tags: [
         {
           id: 1,
-          name: 'React.js',
-          path: '/assets/react.svg',
+          name: 'Node.js',
+          path: '/assets/node.svg',
         },
         {
           id: 2,
-          name: 'TailwindCSS',
-          path: 'assets/tailwindcss.png',
-        },
-        {
-          id: 3,
           name: 'TypeScript',
           path: '/assets/typescript.png',
         },
         {
-          id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
+          id: 3,
+          name: 'Knex',
+          path: '/assets/knex.svg',
         },
       ],
     },
     {
-      title: 'Imaginify - AI Photo Manipulation App',
-      desc: 'Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.',
+      title: 'Choppy - A food Recipe platform',
+      desc: 'Choppy is a food recipe platform that offers a wide range of recipes to help you cook delicious meals at home. Whether you’re a beginner or an experienced cook, Choppy has recipes for every taste and skill level. You can search for recipes by ingredients, cuisine, or dietary preferences, save your favorite recipes, and create shopping lists to make meal planning easy and convenient.',
       subdesc:
-        'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.',
-      href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
+        'With a focus on simplicity and variety, Choppy provides step-by-step instructions, cooking tips, and nutritional information to help you create tasty, healthy meals for yourself and your loved ones. Whether you’re looking for quick weeknight dinners, special occasion dishes, or healthy snacks, Choppy has you covered.',
+      href: 'https://github.com/deolla/Choppy/tree/main/choppyReact/Choppy/src/assets',
       texture: '/textures/project/project5.mp4',
       logo: '/assets/project-logo5.png',
       logoStyle: {
@@ -234,13 +249,8 @@ export const navLinks = [
         },
         {
           id: 3,
-          name: 'TypeScript',
-          path: '/assets/typescript.png',
-        },
-        {
-          id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
+          name: 'JavaScript',
+          path: '/assets/js.svg',
         },
       ],
     },

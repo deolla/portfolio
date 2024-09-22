@@ -13,6 +13,21 @@ body {
   font-family: "General Sans", sans-serif;
 }
 
+.dark-mode {
+  background: #121212;
+  color: #ffffff;
+}
+
+.high-contrast {
+  background: yellow;
+  color: black;
+}
+
+.light-mode {
+  background: #ffffff;
+  color: #000000;
+}
+
 @layer utilities {
   .c-space {
     @apply sm:px-10 px-5;

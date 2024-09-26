@@ -15,22 +15,27 @@ const SpaceBoy = (props) => {
   const { nodes, materials, animations } = useGLTF('/models/astronaut_floating_in_space.glb')
   useAnimations(animations, group)
 
-  const jumpHeight = 0.3; // Maximum height of the jump
-  const jumpDuration = 1000; // Time for a full jump cycle in milliseconds
+  const jumpHeight = 0.3;
+  const jumpDuration = 1000;
+  const moveRadius = 1.5;
+  const moveSpeed = 0.5;
 
   useFrame((state) => {
-    const elapsed = state.clock.getElapsedTime() * 400; // Get elapsed time in milliseconds
-    const jumpProgress = (elapsed % jumpDuration) / jumpDuration; // Progress through the jump cycle
+    const elapsed = state.clock.getElapsedTime() * 300; 
+    const jumpProgress = (elapsed % jumpDuration) / jumpDuration; 
 
-    // Calculate Y position for a jumping effect using a sine wave
-    const y = Math.abs(Math.sin(jumpProgress * Math.PI * 2)) * jumpHeight; // Jump height based on sine wave
-    group.current.position.y = y; // Set the new Y position
+    const y = Math.abs(Math.sin(jumpProgress * Math.PI * 2)) * jumpHeight;
+
+    const x = Math.cos(state.clock.getElapsedTime() * moveSpeed) * moveRadius;
+    const z = Math.sin(state.clock.getElapsedTime() * moveSpeed) * moveRadius;
+
+    group.current.position.set(x, y, z);
   });
 
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Sketchfab_Scene">
-        <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]} scale={0.687}>
+        <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]} scale={0.687} position={[-7, -3, -3]}>
           <group name="a2d102a266ba49a28c0b4ae14e745f31fbx" rotation={[Math.PI / 2, 0, 0]}>
             <group name="Object_2">
               <group name="RootNode">

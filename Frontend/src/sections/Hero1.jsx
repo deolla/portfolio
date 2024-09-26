@@ -1,25 +1,19 @@
-// 
-
 import { Canvas } from "@react-three/fiber";
-import {
-  PerspectiveCamera as ThreePerspectiveCamera,
-  OrbitControls,
-  Sphere,
-} from "@react-three/drei";
+import { PerspectiveCamera as ThreePerspectiveCamera } from "@react-three/drei";
 import { Suspense } from "react";
 import CanvasLoader from "../components/CanvasLoader.jsx";
 import { useMediaQuery } from "react-responsive";
-import { calculateSizes, webSizes } from "../constants/index.js";
+import { calculateSizes } from "../constants/index.js";
 import CameraZone from "../components/Camera.jsx";
 import Button from "../components/Buttons.jsx";
-import Space from "../components/Space.jsx";
 import Circle from "../components/Circle.jsx";
 import Rings from "../components/Rings.jsx";
 import SpaceBoy from "../components/SpaceBoy.jsx";
 import Galaxy1 from "../components/Galaxy1.jsx";
 import Galaxy2 from "../components/Galaxy2.jsx";
 import Galaxy3 from "../components/Galaxy3.jsx";
-import Cube from "../components/Cube.jsx";
+import City from "../components/City.jsx";
+import Moon from "../components/Moon.jsx";
 
 const Hero = () => {
   const isSmall = useMediaQuery({ query: "(max-width: 440px)" });
@@ -28,7 +22,6 @@ const Hero = () => {
     query: "(min-width: 768px, max-width: 1024px)",
   });
 
-  const sizes = webSizes(isSmall, isMobile, isTable);
   const size = calculateSizes(isSmall, isMobile, isTable);
 
   return (
@@ -49,28 +42,18 @@ const Hero = () => {
           camera={{ position: [0, 0, 20], fov: 35, near: 1, far: 40 }}
         >
           <Suspense fallback={<CanvasLoader />}>
-            <OrbitControls
-              enableZoom={false}
-              maxPolarAngle={Math.PI / 2}
-              minPolarAngle={0}
-            />
             <ThreePerspectiveCamera makeDefault position={[0, 0, 20]} />
             <CameraZone isMobile={isMobile}>
-              <Space />
+              <City />
             </CameraZone>
             <group>
-              <Circle
-                position={size.targetPosition}
-                rotation={size.circleRotation}
-                scale={size.circleScale}
-              />
-              <Rings position={size.ringPosition} scale={size.ringScale} />
-              <Sphere />
-              <SpaceBoy position={sizes.spaceBoyPosition} />
+              <Circle position={size.circlePosition} />
+              <Rings position={size.globinPosition} scale={size.ringScale} />
+              <Moon position={size.reactLogoPosition} />
+              <SpaceBoy position={size.cubePosition} />
               <Galaxy1 />
               <Galaxy2 />
               <Galaxy3 />
-              <Cube position={size.cubePosition} />
             </group>
             <ambientLight intensity={1} />
             <directionalLight position={[10, 10, 10]} intensity={0.5} />

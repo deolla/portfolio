@@ -261,19 +261,15 @@ export const navLinks = [
       deskScale: isSmall ? 0.05 : isMobile ? 0.06 : 0.065,
       deskPosition: isMobile ? [0.5, -4.5, 0] : [0.25, -5.5, 0],
       cubePosition: isSmall ? [4, -5, 0] : isMobile ? [5, -5, 0] : isTablet ? [5, -5, 0] : [9, -5.5, 0],
-      reactLogoPosition: isSmall ? [3, 4, 0] : isMobile ? [5, 4, 0] : isTablet ? [5, 4, 0] : [12, 3, 0],
-      ringPosition: isSmall ? [5, 7, 0] : isMobile ? [12, 10, 0] : isTablet ? [20, 10, 0] : [22, 10, 0],
+      reactLogoPosition: isSmall ? [6, 2, -7] : isMobile ? [7, 0, 0] : isTablet ? [5, 4, 0] : [12, 3, 0],
+      ringPosition: isSmall ? [10, 12, 0] : isMobile ? [13, 10, 0] : isTablet ? [20, 11, 0] : [16, 9, 0],
       targetPosition: isSmall ? [-5, -10, -10] : isMobile ? [-9, -10, -10] : isTablet ? [-11, -7, -10] : [-13, -13, -10],
-      circlePosition: isSmall ? [-4, 9, -2] : isMobile ? [-8, 8, -6] : isTablet ? [-10, 9, -8] : [-15, 8, -11],
+      circlePosition: isSmall ? [-7, 8, -5] : isMobile ? [-8, 6, -4] : isTablet ? [-10, 9, -8] : [-15, 6.8, -11],
       circleScale: isSmall ? 1.5 : isMobile ? 1.5 : 1.5,
       circleRotation: isSmall ? [Math.PI / 2, 0, 0] : isMobile ? [Math.PI / 2, 0, 0] : isTablet ? [Math.PI / 2, 0, 0] : [Math.PI / 2, 0, 0],
-      eyePosition: isSmall [-8, 9, 12]
-    };
-  };
-
-  export const webSizes = (isSmall, isMobile, isTablet) => {
-    return {
-      globinPosition: isSmall ? [-10, 0, -2] : isMobile ? [10, 0, -11] : isTablet ? [10, 0, -10] : [-18, -9, -9],
+      eyePosition: isSmall [-8, 9, 12],
+      globinPosition: isSmall ? [-9, 6, -3] : isMobile ? [-10, 3, -11] : isTablet ? [12, 0, -10] : [-18, -9, -9],
+      spaceBoyPosition: isSmall ? [10, -5, 9] : isMobile ? [0, -5, 9] : isTablet ? [10, -5, 0] : [0, -5, 0],
     };
   };
   

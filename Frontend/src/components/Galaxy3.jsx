@@ -7,35 +7,37 @@ Title: Rick and Morty Space ship
 */
 
 import { useGLTF } from '@react-three/drei'
-import { useFrame } from '@react-three/fiber';
 import { useRef } from 'react';
+import { useFrame } from '@react-three/fiber';
 
 const Galaxy3 = (props) => {
   const { nodes, materials } = useGLTF('/models/rick_and_morty_space_ship.glb')
 
   const groupRef = useRef();
-  
-  // Animation parameters
-  const radius = 5; 
-  const speed = 0.005;
-  let angle = 0;
+
+  const radius = 50;
+  const speed = 0.5;
+  const totalFrames = 360;
+  let frame = 0;
 
   useFrame(() => {
-    angle += speed;
-    
-    const x = Math.cos(angle) * radius; // Calculate x position
-    const z = Math.sin(angle) * radius; // Calculate z position
-    // Update the position of the group
+    const angle = (frame / totalFrames) * Math.PI * 2;
+
+    const x = Math.cos(angle) * radius; 
+    const z = Math.sin(angle) * radius; 
+
     if (groupRef.current) {
       groupRef.current.position.set(x, groupRef.current.position.y, z);
-      groupRef.current.rotation.y = angle; // Optional: Rotate around the Y-axis
+      groupRef.current.rotation.y = angle;
     }
+    
+    frame = (frame + speed) % totalFrames;
   });
 
 
   return (
     <group ref={groupRef} {...props} dispose={null}>
-      <group rotation={[-Math.PI / 2, 0, 0]} position={4.6} scale={0.7}>
+      <group rotation={[-Math.PI / 2, 0, 0]} position={0.7} scale={1.8}>
         <mesh
           castShadow
           receiveShadow

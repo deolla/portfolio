@@ -32,28 +32,29 @@ export const navLinks = [
     },
     {
       id: 2,
-      name: 'Mark Rogers',
-      position: 'Founder of TechGear Shop',
+      name: 'Kundam Job',
+      position: 'CEO at Alkii',
       img: 'assets/review2.png',
       review:
-        'Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.',
+        'Oluwaseyi’s expertise in web development is truly impressive. She delivered a robust and scalable solution for our e-commerce site, leading to a remarkable increase in our online sales since the launch. Her professionalism and dedication shine through in her work!',
     },
     {
       id: 3,
-      name: 'John Dohsas',
-      position: 'Project Manager at UrbanTech ',
-      img: 'assets/review3.png',
+      name: 'Osi Keme',
+      position: 'CEO at Alkii/Frontend Developer',
+      img: 'assets/review4.png',
       review:
-        'I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
+        'I can’t express how grateful we are to have worked with Oluwaseyi. She skillfully navigated our complex project requirements and transformed them into a seamless, functional website. Her problem-solving skills are exceptional, making her a valuable asset to any team.',
     },
     {
       id: 4,
-      name: 'Ether Smith',
-      position: 'CEO of BrightStar Enterprises',
-      img: 'assets/review4.png',
+      name: 'Obigba Ebruski',
+      position: 'Full Stack Developer',
+      img: 'assets/review3.png',
       review:
-        'Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
+        'Collaborating with Oluwaseyi was a fantastic experience. She grasped our vision quickly and translated it into a functional website that really impressed our stakeholders. Her skills across both frontend and backend development are exceptional.',
     },
+   
   ];
   
   export const myProjects = [

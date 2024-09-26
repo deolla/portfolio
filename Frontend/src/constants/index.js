@@ -267,8 +267,13 @@ export const navLinks = [
       circlePosition: isSmall ? [-4, 9, -2] : isMobile ? [-8, 8, -6] : isTablet ? [-10, 9, -8] : [-15, 8, -11],
       circleScale: isSmall ? 1.5 : isMobile ? 1.5 : 1.5,
       circleRotation: isSmall ? [Math.PI / 2, 0, 0] : isMobile ? [Math.PI / 2, 0, 0] : isTablet ? [Math.PI / 2, 0, 0] : [Math.PI / 2, 0, 0],
-      // globePosition: isSmall ? [-10, 0, 5] : isMobile ? [8, -9, -11] : isTablet ? [6, -12, -18] : [10, -10, -11],
       eyePosition: isSmall [-8, 9, 12]
+    };
+  };
+
+  export const webSizes = (isSmall, isMobile, isTablet) => {
+    return {
+      globinPosition: isSmall ? [-10, 0, -2] : isMobile ? [10, 0, -11] : isTablet ? [10, 0, -10] : [-18, -9, -9],
     };
   };
   

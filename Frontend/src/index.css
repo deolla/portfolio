@@ -6,21 +6,18 @@
 
 * {
   scroll-behavior: smooth;
+  cursor: none;
 }
 
 body {
   background: #010103;
   font-family: "General Sans", sans-serif;
+  cursor: none;
 }
 
 .dark-mode {
   background: #121212;
   color: #ffffff;
-}
-
-.high-contrast {
-  background: yellow;
-  color: black;
 }
 
 .light-mode {

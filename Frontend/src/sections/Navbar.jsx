@@ -28,7 +28,7 @@ const Navbar = () => {
             href="/"
             className="text-neutral-400 font-bold text-xl hover:text-white transition-colors"
           >
-            🐦‍🔥Oluwaseyi Adeosun
+           <img src="assets/logo8.png" alt="logo" className="w-23 h-12" />
           </a>
           <button
             onClick={toggleMenu}

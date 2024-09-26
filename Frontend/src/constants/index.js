@@ -272,7 +272,16 @@ export const navLinks = [
       spaceBoyPosition: isSmall ? [10, -5, 9] : isMobile ? [0, -5, 9] : isTablet ? [10, -5, 0] : [0, -5, 0],
     };
   };
-  
+
+export const DynamicText = () => {
+    return [
+      "I'm a backend developer.",
+      "I build websites & APIs.",
+      "I also design user interfaces.",
+      "Currently, I'm exploring 3D development."
+    ];
+  };
+
   export const workExperiences = [
     {
       id: 1,

@@ -69,7 +69,7 @@ body {
 
   /* hero section */
   .hero_tag {
-    @apply text-center xl:text-6xl md:text-5xl sm:text-4xl text-3xl font-generalsans font-black !leading-normal;
+    @apply text-center xl:text-6xl md:text-5xl sm:text-4xl text-3xl font-generalsans font-black !leading-normal max-w-full;
   }
 
   /* about section */
@@ -208,6 +208,33 @@ body {
   }
 }
 
+.dynamic-text {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.hero_tag {
+  position: relative; /* Make sure this is positioned relative for absolute elements */
+}
+
+.hero_tag:hover .dynamic-text {
+  animation: fadeIn 0.5s forwards;
+  cursor: pointer; /* Change cursor to pointer for hover */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* Define keyframes for the fade-out effect */
 @keyframes fadeOut {
   0% {
@@ -219,6 +246,6 @@ body {
 }
 
 .fade-out {
-  animation: fadeOut 0.4s ease-in-out forwards;
+  animation: fadeOut 1s ease-in-out forwards;
   opacity: 0;
 }

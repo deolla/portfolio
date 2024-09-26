@@ -1,6 +1,6 @@
 import { Canvas } from "@react-three/fiber";
 import { PerspectiveCamera as ThreePerspectiveCamera } from "@react-three/drei";
-import { Suspense } from "react";
+import { Suspense, useState, useEffect, useMemo, useRef } from "react";
 import CanvasLoader from "../components/CanvasLoader.jsx";
 import { useMediaQuery } from "react-responsive";
 import { calculateSizes } from "../constants/index.js";
@@ -14,8 +14,23 @@ import Galaxy2 from "../components/Galaxy2.jsx";
 import Galaxy3 from "../components/Galaxy3.jsx";
 import City from "../components/City.jsx";
 import Moon from "../components/Moon.jsx";
+import { DynamicText } from "../constants/index.js";
 
 const Hero = () => {
+  const [index, setIndex] = useState(0);
+  const sentences = useMemo(() => DynamicText(), []);
+  const intervalRef = useRef(null); 
+
+  useEffect(() => {
+    const cycleSentences = () => {
+      setIndex((prevIndex) => (prevIndex + 1) % sentences.length);
+    };
+
+    intervalRef.current = setInterval(cycleSentences, 3000);
+
+    return () => clearInterval(intervalRef.current);
+  }, [sentences.length]);
+
   const isSmall = useMediaQuery({ query: "(max-width: 440px)" });
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   const isTable = useMediaQuery({
@@ -30,7 +45,7 @@ const Hero = () => {
         <p className="sm:text-3xl text-2xl font-medium text-white text-center font-generalsans">
           Hello, I&apos;m Oluwaseyi <span className="waving-hand">👋</span>
         </p>
-        <p className="hero_tag text-gray_gradient">I build websites & APIs</p>
+        <p className="hero_tag text-gray_gradient">{sentences[index]}</p>
       </div>
 
       <div className="w-full h-full absolute inset-0">

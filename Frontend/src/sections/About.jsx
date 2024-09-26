@@ -1,4 +1,4 @@
-//
+// 
 
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
@@ -15,16 +15,38 @@ const customIcon = new L.Icon({
 });
 
 const About = () => {
-  const [hasCopied, setHasCopied] = useState(false);
+  const [emailCopied, setEmailCopied] = useState(false);
+  const [numCopied, setNumCopied] = useState(false);
+  const [successMessage, setSuccessMessage] = useState('');
 
-  const copyHandler = () => {
-    navigator.clipboard.writeText("deosundeola@gmail.com");
+  const copyEmailHandler = () => {
+    navigator.clipboard.writeText("deosundeola@gmail.com")
+      .then(() => {
+        setEmailCopied(true);
+        setSuccessMessage("Email copied!");
+        setTimeout(() => {
+          setEmailCopied(false);
+          setSuccessMessage('');
+        }, 2000);
+      })
+      .catch((error) => {
+        console.error("Copy failed!", error);
+      });
+  };
 
-    setHasCopied(true);
-
-    setTimeout(() => {
-      setHasCopied(false);
-    }, 2000);
+  const copyNumHandler = () => {
+    navigator.clipboard.writeText("+2348144094252")
+      .then(() => {
+        setNumCopied(true);
+        setSuccessMessage("Number copied!");
+        setTimeout(() => {
+          setNumCopied(false);
+          setSuccessMessage('');
+        }, 2000);
+      })
+      .catch((error) => {
+        console.error("Copy failed!", error);
+      });
   };
 
   return (
@@ -40,9 +62,7 @@ const About = () => {
             <div>
               <p className="grid-headtext">Hi, I&apos;m Oluwaseyi </p>
               <p className="grid-subtext">
-                With 3 years of experience, I have honed my skills in frontend
-                and backend development, with a focus on backend
-                development/animations.
+                Over the past 2 years, I&apos;ve developed a solid foundation in both frontend and backend development, specializing in backend development and animations.
               </p>
             </div>
           </div>
@@ -57,8 +77,7 @@ const About = () => {
             <div>
               <p className="grid-headtext">Tech Stack</p>
               <p className="grid-subtext">
-                I specialise in JavaScript/TypeScript and Python with an intrest
-                in 3D animations.
+                I focus on JavaScript/TypeScript and Python, and I&apos;m exploring 3D animations to bring my projects to life.
               </p>
             </div>
           </div>
@@ -99,8 +118,7 @@ const About = () => {
             <div>
               <p className="grid-headtext">My Passion</p>
               <p className="grid-subtext">
-                I have a passion for creating beautiful and functional websites
-                and applications.
+                I have a strong passion for crafting websites and applications that are not only visually appealing but also highly functional, ensuring a seamless experience for users.
               </p>
             </div>
           </div>
@@ -115,14 +133,29 @@ const About = () => {
             />
             <div className="space-y-2">
               <p className="grid-subtext text-center">Contact me</p>
-              <div className="copy-container" onClick={copyHandler}>
+              <div className="copy-container" onClick={copyEmailHandler}>
                 <img
-                  src={hasCopied ? "assets/tick.svg" : "assets/copy.svg"}
+                  src={emailCopied ? "assets/tick.svg" : "assets/copy.svg"}
                   alt="copy"
                 />
                 <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">
                   deosundeola@gmail.com
                 </p>
+                {successMessage && successMessage.includes("Email") && (
+                  <p className="text-green-500">{successMessage}</p>
+                )}
+              </div>
+              <div className="copy-container" onClick={copyNumHandler}>
+                <img
+                  src={numCopied ? "assets/tick.svg" : "assets/copy.svg"}
+                  alt="copy"
+                />
+                <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">
+                  +234 8144094252
+                </p>
+                {successMessage && successMessage.includes("Number") && (
+                  <p className="text-green-500">{successMessage}</p>
+                )}
               </div>
             </div>
           </div>

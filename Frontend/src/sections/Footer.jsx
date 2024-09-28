@@ -79,7 +79,7 @@ const Footer = () => {
         <BackToTopButton />
       </div>
       {/* Copyright Section */}
-      <p className="text-gray-500 text-sm">
+      <p className="text-cyan-500 text-sm">
         ©️ {new Date().getFullYear()} Oluwaseyi. All right reserved.
       </p>
     </section>

@@ -4,7 +4,7 @@ const BackToTopButton = () => {
     };
   
     return (
-      <button onClick={scrollToTop} className="text-gray-500">
+      <button onClick={scrollToTop} className="text-red-600">
         Back to Top
       </button>
     );

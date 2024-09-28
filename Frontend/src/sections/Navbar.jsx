@@ -26,9 +26,8 @@ const Navbar = () => {
         <div className="flex justify-between item-center py-5 mx-auto c-space">
           <a
             href="/"
-            className="text-neutral-400 font-bold text-xl hover:text-white transition-colors"
           >
-           <img src="assets/icon1.png" alt="logo" className="w-23 h-12" />
+           <img src="assets/icon1.png" alt="logo" className="w-23 h-14" />
           </a>
           <button
             onClick={toggleMenu}

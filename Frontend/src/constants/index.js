@@ -24,35 +24,35 @@ export const navLinks = [
   export const clientReviews = [
     {
       id: 1,
-      name: 'Emily Johnson',
-      position: 'Marketing Director at GreenLeaf',
-      img: 'assets/review1.png',
+      name: 'Boitumelo Moeca',
+      position: 'CEO at Covo',
+      img: 'assets/review1.svg',
       review:
-        'Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.',
+      'Working with Oluwaseyi was a pleasure. He’s detail-oriented, professional, and really knows his stuff. I would highly recommend him for any web development work.'
     },
     {
       id: 2,
       name: 'Kundam Job',
       position: 'CEO at Alkii',
-      img: 'assets/review2.png',
+      img: 'assets/review2.svg',
       review:
-        'Oluwaseyi’s expertise in web development is truly impressive. She delivered a robust and scalable solution for our e-commerce site, leading to a remarkable increase in our online sales since the launch. Her professionalism and dedication shine through in her work!',
+      'Oluwaseyi is a true expert in web development. She brought so much creativity to the project and is always professional and easy to work with. Her dedication really stands out, and I always felt like I was in good hands.'
     },
     {
       id: 3,
       name: 'Osi Keme',
       position: 'CEO at Alkii/Frontend Developer',
-      img: 'assets/review4.png',
+      img: 'assets/review3.svg',
       review:
-        'I can’t express how grateful we are to have worked with Oluwaseyi. She skillfully navigated our complex project requirements and transformed them into a seamless, functional website. Her problem-solving skills are exceptional, making her a valuable asset to any team.',
+        'Great problem solver and always ready to go the extra mile to get things done. Couldn’t ask for a better person to collaborate with. Working with her was smooth, and she made complex tasks feel simple.',
     },
     {
       id: 4,
       name: 'Obigba Ebruski',
       position: 'Full Stack Developer',
-      img: 'assets/review3.png',
+      img: 'assets/review4.svg',
       review:
-        'Collaborating with Oluwaseyi was a fantastic experience. She grasped our vision quickly and translated it into a functional website that really impressed our stakeholders. Her skills across both frontend and backend development are exceptional.',
+        'An amazing developer! Skilled, reliable, and consistently delivers top-notch work. It was a fantastic experience working together. She’s skilled, reliable, and consistently delivers top-notch work. I truly appreciate her commitment and work ethic.',
     },
    
   ];

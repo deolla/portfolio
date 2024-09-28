@@ -6,7 +6,7 @@ import BackToTopButton from "../components/BackToTop";
 const Footer = () => {
   return (
     <section className="c-space pt-7 pb-3 border-t border-black-300 flex justify-between items-center flex-wrap gap-5">
-      <div className="text-gray-500">
+      <div className="text-cyan-500">
         <div className="flex gap-2">
           <p>Oluwaseyi, Inc.</p>
         </div>

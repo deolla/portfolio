@@ -28,7 +28,7 @@ const Contact = () => {
     setFadeOut(false);
 
     try {
-      const res = await fetch(`http://localhost:5000/api/form`, {
+      const res = await fetch(`https://portfolio-1-9luk.onrender.com/api/form`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
